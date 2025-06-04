@@ -36,9 +36,12 @@ Comandi disponibili:
 bot.onText(/\/info/, (msg) => {
   const chatId = msg.chat.id;
   bot.sendMessage(chatId, `
-https://erdomi08.github.io/memory-game/ ${process.env.NODE_ENV || 'development'}
+Bot creato durante il corso di Containerizzazione e Deployment.
+Versione: 1.0.0
+Ambiente: ${process.env.NODE_ENV || 'development'}
 `);
 });
+
 
 // Gestisci messaggi non riconosciuti
 bot.on('message', (msg) => {
