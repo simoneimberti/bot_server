@@ -10,6 +10,9 @@ if (!token) {
 
 // Crea una nuova istanza del bot
 const bot = new TelegramBot(token, { polling: true });
+//Prova sync github
+//funziona okokù
+
 
 // Gestisci il comando /start
 bot.onText(/\/start/, (msg) => {
